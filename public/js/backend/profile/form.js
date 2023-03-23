@@ -21,7 +21,7 @@ $(function () {
             //  Comprobación del tamaño del archivo
             if ((file.size / 1024) / 1024 > 5) {
                 // Sobre el tamaño del archivo
-                alert('El límite superior de archivos que se pueden adjuntar es 5 MB.');
+                alert('El límite superior de archivos que se pueden adjuntar es 5 MBbb.');
                 cancelImage();
             } else {
                 // Comprobar el ancho y el alto de la imagen
