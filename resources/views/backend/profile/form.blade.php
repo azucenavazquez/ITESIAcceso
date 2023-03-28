@@ -108,7 +108,7 @@
                            data-max-height="400">
                     <label class="custom-file-label" for="customFile">Subir imagen</label>
                     <span
-                        class="image-upload-label"><i class="fa fa-question-circle" aria-hidden="true"></i> Por favor, sube la imagen (Tamaño recomendado: 160px × 160px, max 5MB)</span>
+                        class="image-upload-label"><i class="fa fa-question-circle" aria-hidden="true"></i> Por favor, sube la imagen (tamaño recomendado: 160px × 160px, max 5MB)</span>
                     <div class="image-preview-area">
                         <div id="image_preview" class="image-preview">
                                 <img src="{{ asset('uploads/'.$data->image) }}" width="160" title="image"
