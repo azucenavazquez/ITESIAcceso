@@ -57,6 +57,6 @@ class User extends \App\Models\Base\User implements AuthenticatableContract, Aut
 
     public function adminlte_desc()
     {
-        return 'Hi, Welcome!';
+        return 'Hola Bienvenido';
     }
 }
