@@ -1,7 +1,7 @@
 $(function () {
     // Alternar contraseña en texto sin formato si la casilla de verificación está seleccionada
     $("#show-password").click(function () {
-        $(this).is(":checked") ? $("#password").prop("type", "text") : $("#Contraseña").prop("type", "Contraseña");
+        $(this).is(":checked") ? $("#password").prop("type", "text") : $("#password").prop("type", "password");
     });
 
     // Vista  para validar para la imagen y tamaño con un limite 5MB
