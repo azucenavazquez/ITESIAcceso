@@ -40,11 +40,37 @@
                 <div class="col-sm-10 col-content">
                     {{ Form::text('name', $data->name, array('class' => 'form-control', 'required')) }}
                     <small class="form-text text-muted">
-                        <i class="fa fa-question-circle" aria-hidden="true"></i> Agregar el numero control.
+                        <i class="fa fa-question-circle" aria-hidden="true"></i> Agregar el número control.
                     </small>
                 </div>
             </div>
+            <div class="card-body">
+            <div class="form-group row">
+                <div class="col-sm-2 col-form-label">
+                    <strong class="field-title">Carrera</strong>
+                </div>
 
+                <div class="col-sm-10 col-content">
+                    {{ Form::text('name', $data->name, array('class' => 'form-control', 'required')) }}
+                    <small class="form-text text-muted">
+                        <i class="fa fa-question-circle" aria-hidden="true"></i> Escribir su carrera.
+                    </small>
+                </div>
+            </div>
+            <div class="card-body">
+            <div class="form-group row">
+                <div class="col-sm-2 col-form-label">
+                    <strong class="field-title">Semestre</strong>
+                </div>
+
+                <div class="col-sm-10 col-content">
+                    {{ Form::text('name', $data->name, array('class' => 'form-control', 'required')) }}
+                    <small class="form-text text-muted">
+                        <i class="fa fa-question-circle" aria-hidden="true"></i> Agregar el semestre actual.
+                    </small>
+                </div>
+            </div>
+            
 
             <div class="form-group row">
                 <div class="col-sm-2 col-form-label">
