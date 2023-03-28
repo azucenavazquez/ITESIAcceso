@@ -134,13 +134,6 @@
                     <strong class="field-title">Código QR</strong>
                 </div>
 
-                <div class="col-sm-10 col-content">
-                    {{ Form::text('name', $data->name, array('class' => 'form-control', 'required')) }}
-                    <small class="form-text text-muted">
-                        <i class="fa fa-question-circle" aria-hidden="true"></i> Dowload.
-                    </small>
-                </div>
-            </div>
 
         <div class="card-footer">
             <div id="form-button">
