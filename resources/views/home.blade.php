@@ -17,7 +17,7 @@
                 </div>
             @endif
 
-            Hi, and Welcome!
+            HOla Bienvenido!
         </div>
     </div>
 
