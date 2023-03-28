@@ -323,7 +323,7 @@ return [
             'role' => 'administrator',
         ],
         [
-            'text' => 'Profile',
+            'text' => 'Perfil',
             'url'  => 'profile/details',
             'icon' => 'fa fa-id-card',
         ],
