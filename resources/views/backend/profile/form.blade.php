@@ -1,9 +1,9 @@
 @extends('adminlte::page')
 <!-- page title -->
-@section('title', 'Edit Profile | ' . Config::get('adminlte.title'))
+@section('title', 'Editar Perfil | ' . Config::get('adminlte.title'))
 
 @section('content_header')
-    <h1>Profile</h1>
+    <h1>Perfil</h1>
 @stop
 
 @section('content')
@@ -12,7 +12,7 @@
 
     <div class="card">
         <div class="card-header">
-            <h3 class="card-title">Update</h3>
+            <h3 class="card-title">Actualizar</h3>
         </div>
 
         {{ Form::open(array('url' => route($data->form_action), 'method' => 'POST','autocomplete' => 'off', 'files' => true)) }}
@@ -21,36 +21,36 @@
         <div class="card-body">
             <div class="form-group row">
                 <div class="col-sm-2 col-form-label">
-                    <strong class="field-title">Name</strong>
+                    <strong class="field-title">Nombre</strong>
                 </div>
                 <div class="col-sm-10 col-content">
                     {{ Form::text('name', $data->name, array('class' => 'form-control', 'required')) }}
                     <small class="form-text text-muted">
-                        <i class="fa fa-question-circle" aria-hidden="true"></i> Your name.
+                        <i class="fa fa-question-circle" aria-hidden="true"></i> Su Nombre.
                     </small>
                 </div>
             </div>
 
             <div class="form-group row">
                 <div class="col-sm-2 col-form-label">
-                    <strong class="field-title">Email</strong>
+                    <strong class="field-title">Correo</strong>
                 </div>
                 <div class="col-sm-10 col-content">
                     {{ Form::email('email',$data->email, array('class' => 'form-control', 'required')) }}
                     <small class="form-text text-muted">
-                        <i class="fa fa-question-circle" aria-hidden="true"></i> Your email, this email for login.
+                        <i class="fa fa-question-circle" aria-hidden="true"></i> Su correo electrónico, este correo electrónico para iniciar sesión.
                     </small>
                 </div>
             </div>
 
             <div id="form-password" class="form-group row">
                 <div class="col-sm-2 col-form-label">
-                    <strong class="field-title">Password</strong>
+                    <strong class="field-title">Contraseña</strong>
                 </div>
                 <div class="col-sm-10 col-content">
                     {{ Form::password('password', array('id' => 'password', 'class' => 'form-control', 'autocomplete' => 'new-password')) }}
                       <small id="passwordHelpBlock" class="form-text text-muted">
-                          Your password, this password for login. Leave it blank if you don't want to change
+                      Su contraseña, esta contraseña para iniciar sesión. Déjalo en blanco si no quieres cambiar    
                       </small>
                     <label class="reset-field-password" for="show-password"><input id="show-password" type="checkbox" name="show-password" value="1"> Show Password</label>
                 </div>
@@ -59,7 +59,7 @@
             {{--  image  --}}
             <div id="form-image" class="form-group row">
                 <div class="col-sm-2 col-form-label">
-                    <strong class="field-title">Image</strong>
+                    <strong class="field-title">Imagen</strong>
                 </div>
                 <div class="col-sm-10 col-content">
                     <input class="custom-file-input" name="image" type="file"
@@ -67,7 +67,7 @@
                            data-max-height="400">
                     <label class="custom-file-label" for="customFile">Choose file</label>
                     <span
-                        class="image-upload-label"><i class="fa fa-question-circle" aria-hidden="true"></i> Please upload the image (Recommended size: 160px × 160px, max 5MB)</span>
+                        class="image-upload-label"><i class="fa fa-question-circle" aria-hidden="true"></i> Por favor, sube la imagen (Tamaño recomendado: 160px × 160px, max 5MB)</span>
                     <div class="image-preview-area">
                         <div id="image_preview" class="image-preview">
                                 <img src="{{ asset('uploads/'.$data->image) }}" width="160" title="image"
