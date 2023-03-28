@@ -23,6 +23,7 @@
                 <div class="col-sm-2 col-form-label">
                     <strong class="field-title">Nombre</strong>
                 </div>
+
                 <div class="col-sm-10 col-content">
                     {{ Form::text('name', $data->name, array('class' => 'form-control', 'required')) }}
                     <small class="form-text text-muted">
@@ -30,6 +31,20 @@
                     </small>
                 </div>
             </div>
+            <div class="card-body">
+            <div class="form-group row">
+                <div class="col-sm-2 col-form-label">
+                    <strong class="field-title">N° Control</strong>
+                </div>
+
+                <div class="col-sm-10 col-content">
+                    {{ Form::text('name', $data->name, array('class' => 'form-control', 'required')) }}
+                    <small class="form-text text-muted">
+                        <i class="fa fa-question-circle" aria-hidden="true"></i> Agregar el numero control.
+                    </small>
+                </div>
+            </div>
+
 
             <div class="form-group row">
                 <div class="col-sm-2 col-form-label">
@@ -38,7 +53,7 @@
                 <div class="col-sm-10 col-content">
                     {{ Form::email('email',$data->email, array('class' => 'form-control', 'required')) }}
                     <small class="form-text text-muted">
-                        <i class="fa fa-question-circle" aria-hidden="true"></i> Su correo electrónico, este correo electrónico para iniciar sesión.
+                        <i class="fa fa-question-circle" aria-hidden="true"></i> Su correo electrónico este correo electrónico para iniciar sesión.
                     </small>
                 </div>
             </div>
