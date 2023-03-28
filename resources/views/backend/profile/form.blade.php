@@ -52,7 +52,7 @@
                       <small id="passwordHelpBlock" class="form-text text-muted">
                       Su contraseña, esta contraseña para iniciar sesión. Déjalo en blanco si no quieres cambiar    
                       </small>
-                    <label class="reset-field-password" for="show-password"><input id="show-password" type="checkbox" name="show-password" value="1"> Show Password</label>
+                    <label class="reset-field-password" for="show-password"><input id="show-password" type="checkbox" name="show-password" value="1"> Mostrar Contraseña</label>
                 </div>
             </div>
 
