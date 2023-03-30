@@ -106,7 +106,7 @@
                     <input class="custom-file-input" name="image" type="file"
                            accept="image/gif, image/jpeg,image/jpg,image/png" data-max-width="800"
                            data-max-height="400">
-                    <label class="custom-file-label" for="customFile">Subir imagen</label>
+                    <label class="custom-file-label" for="customFile">Actualizar Imagen</label>
                     <span
                         class="image-upload-label"><i class="fa fa-question-circle" aria-hidden="true"></i> Por favor, sube la imagen (tamaño recomendado: 160px × 160px, max 5MB)</span>
                     <div class="image-preview-area">

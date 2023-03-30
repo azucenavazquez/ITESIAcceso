@@ -44,7 +44,7 @@ class ProfileController extends Controller
         $userId = Auth::user()->id;
         $data = User::find($userId);
         $data->form_action = $this->getRoute() . '.update';
-        $data->button_text = 'Edit';
+        $data->button_text = 'Editar';
 
         // Get history id by name
         $getHistory = History::where('name', $data->name)
