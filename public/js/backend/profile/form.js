@@ -1,30 +1,30 @@
 $(function () {
-    // Alternar contraseña en texto sin formato si la casilla de verificación está seleccionada
+    // toggle password in plaintext if checkbox is selected
     $("#show-password").click(function () {
         $(this).is(":checked") ? $("#password").prop("type", "text") : $("#password").prop("type", "password");
     });
 
-    // Vista  para validar para la imagen y tamaño con un limite 5MB
+    // preview and validate for image, limit size 5MB
     var _URL = window.URL || window.webkitURL;
-    $("input:file[nombre='imagen']").change(function (e) {
+    $("input:file[name='image']").change(function (e) {
         e.preventDefault();
         $preview = $('#' + e.target.name + '_preview');
         var file, img, reader;
         var maxWidth = $(this).attr('data-max-width');
         var maxHeight = $(this).attr('data-max-height');
 
-        // Compruebe si el archivo de imagen está seleccionado o no en el cuadro de diálogo 
+        // check if image file is selected or not in file selection dialog
         if (e.target.files[0]) {
             file = e.target.files[0],
                 reader = new FileReader();
 
-            //  Comprobación del tamaño del archivo
+            // file size check
             if ((file.size / 1024) / 1024 > 5) {
-                // Sobre el tamaño del archivo
-                alert('El límite superior de archivos que se pueden adjuntar es 5 MBbb.');
+                // over file size
+                alert('The upper limit of files that can be attached is 5 MB.');
                 cancelImage();
             } else {
-                // Comprobar el ancho y el alto de la imagen
+                // check image width and height
                 img = new Image();
                 img.onload = function () {
                     var width  = img.naturalWidth  || img.width;
@@ -33,13 +33,13 @@ $(function () {
 
                     if (width > maxWidth || height > maxHeight)
                     {
-                        alert('Por favor cargue la imagen (tamaño recomendado : 160px × 160px)');
+                        alert('Please upload the image (Recommended size: 160px × 160px)');
                         cancelImage();
                     }
                 };
                 img.src = _URL.createObjectURL(file);
 
-                // Vista previa
+                // preview
                 reader.onload = (function(file) {
                     return function(e) {
                         $preview.empty();
@@ -55,11 +55,11 @@ $(function () {
                 reader.readAsDataURL(file);
             }
         } else {
-            // Abrir archivo, seleccionar modelo y no seleccionada
+            // open file select model and not selected
             cancelImage();
         }
 
-        // Eliminar vista previa y valor a vacío
+        // delete preview and value to empty
         function cancelImage() {
             $preview.empty();
             $('[name="' + e.target.name + '"]').val('');
