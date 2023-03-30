@@ -100,7 +100,7 @@ class ProfileController extends Controller
 
                 // Save log
                 $controller = new SaveActivityLogController();
-                $controller->saveLog($new, "Update Profile");
+                $controller->saveLog($new, "Actualizar perfil");
 
                 // If user update role 2 or 3 means admin or staff will upadate also the history QR
                 if ($currentData->role == 2 || $currentData->role == 3) {
