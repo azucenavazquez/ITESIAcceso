@@ -39,7 +39,7 @@
         </div>
 
          <div class="col-sm-10 col-content">
-             {{ Form::text('name', $data->name, array('class' => 'form-control', 'required')) }}
+             {{ Form::text('n control', $data->name, array('class' => 'form-control', 'required')) }}
             <small class="form-text text-muted">
                 <i class="fa fa-question-circle" aria-hidden="true"></i> Establecer el número de control.
               </small>
@@ -54,7 +54,7 @@
                 <ul>
 
                 <div class="col-sm-10 col-content">
-                    {{ Form::text('name', $data->name, array('class' => 'form-control', 'required')) }}
+                    {{ Form::text('carrera', $data->name, array('class' => 'form-control', 'required')) }}
                     <small class="form-text text-muted">
                         <i class="fa fa-question-circle" aria-hidden="true"></i> Establecer la carrera.
                     </small>
@@ -73,9 +73,21 @@
                 <div class="col-sm-2 col-form-label">
                     <strong class="field-title">Semestre</strong>
                 </div>
-
+               
                 <div class="col-sm-10 col-content">
-                    {{ Form::text('name', $data->name, array('class' => 'form-control', 'required')) }}
+                    {{ Form::text('semestre', $data->name, array('class' => 'form-control', 'required')) }}
+                    <li><a href="#">Mostrar carreras</a>
+         <ul>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+                <li><a href="#">8</a></li>
+                <li><a href="#">9</a></li>
+          </ul>
                     <small class="form-text text-muted">
                         <i class="fa fa-question-circle" aria-hidden="true"></i> Actualizar el semestre actual.
                     </small>
