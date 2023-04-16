@@ -58,8 +58,8 @@
                     <small class="form-text text-muted">
                         <i class="fa fa-question-circle" aria-hidden="true"></i> Establecer la carrera.
                     </small>
-                    a href="#">Mostrar carreras </a>
-        
+                    
+                    <li><a href="#">Mostrar carreras</a>
          <ul>
                 <li><a href="#">Industrial</a></li>
                 <li><a href="#">Gestion Empresarial</a></li>
