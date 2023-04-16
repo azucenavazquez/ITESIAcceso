@@ -18,20 +18,19 @@
         {{ Form::open(array('url' => route($data->form_action), 'method' => 'POST','autocomplete' => 'off', 'files' => true)) }}
         {{ Form::hidden('id', $data->id, array('id' => 'user_id')) }}
 
-    <div class="card-body">
-     <div class="form-group row">
-     div class="col-sm-2 col-form-label">
-       
-        <strong class="field-title">Nombre</strong>
+               <div class="card-body">
+               <div class="form-group row">
+              div class="col-sm-2 col-form-label">
+               <strong class="field-title">Nombre</strong>
 
-        </div>
+             </div>
 
-    <div class="col-sm-10 col-content">
-     {{ Form::text('name', $data->name, array('class' => 'form-control', 'required')) }}
-        <small class="form-text text-muted">
-     <i class="fa fa-question-circle" aria-hidden="true"></i> Escriba su nombre.
-          </small>
-         </div>
+               <div class="col-sm-10 col-content">
+               {{ Form::text('name', $data->name, array('class' => 'form-control', 'required')) }}
+               <small class="form-text text-muted">
+               <i class="fa fa-question-circle" aria-hidden="true"></i> Escriba su nombre.
+                </small>
+                </div>
         </div>
          <div class="card-body">
         <div class="form-group row">
