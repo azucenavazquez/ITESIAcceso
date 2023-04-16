@@ -59,7 +59,7 @@
                         <i class="fa fa-question-circle" aria-hidden="true"></i> Establecer la carrera.
                     </small>
                     
-                    <li><a href="#">Mostrar carreras</a>
+                    <li><a href="#">Escribir  carreras</a>
          <ul>
                 <li><a href="#">Industrial</a></li>
                 <li><a href="#">Gestion Empresarial</a></li>
@@ -76,7 +76,7 @@
                
                 <div class="col-sm-10 col-content">
                     {{ Form::text('semestre', $data->name, array('class' => 'form-control', 'required')) }}
-                    <li><a href="#">Mostrar carreras</a>
+                    <li><a href="#">Escribir semestre</a>
          <ul>
                 <li><a href="#">1</a></li>
                 <li><a href="#">2</a></li>
