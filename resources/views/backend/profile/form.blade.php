@@ -20,8 +20,10 @@
 
     <div class="card-body">
      <div class="form-group row">
-        div class="col-sm-2 col-form-label">
+     div class="col-sm-2 col-form-label">
+       
         <strong class="field-title">Nombre</strong>
+
         </div>
 
     <div class="col-sm-10 col-content">
