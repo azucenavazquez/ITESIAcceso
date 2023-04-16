@@ -52,19 +52,20 @@
                     <strong class="field-title">Carrera</strong>
                 </div>
                 <ul>
-     <li><a href="#">Mostrar carreras </a>
-         <!-- start menu desplegable -->
+
+                <div class="col-sm-10 col-content">
+                    {{ Form::text('name', $data->name, array('class' => 'form-control', 'required')) }}
+                    <small class="form-text text-muted">
+                        <i class="fa fa-question-circle" aria-hidden="true"></i> Establecer la carrera.
+                    </small>
+                    a href="#">Mostrar carreras </a>
+        
          <ul>
                 <li><a href="#">Industrial</a></li>
                 <li><a href="#">Gestion Empresarial</a></li>
                 <li><a href="#">Sistemas Computacionales</a></li>
                 <li><a href="#">Sistemas Automotriz</a></li>
           </ul>
-                <div class="col-sm-10 col-content">
-                    {{ Form::text('name', $data->name, array('class' => 'form-control', 'required')) }}
-                    <small class="form-text text-muted">
-                        <i class="fa fa-question-circle" aria-hidden="true"></i> Establecer la carrera.
-                    </small>
                 </div>
             </div>
             <div class="card-body">
