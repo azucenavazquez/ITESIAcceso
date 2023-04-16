@@ -13,36 +13,36 @@
     <div class="card">
         <div class="card-header">
             <h3 class="card-title">Actualizar</h3>
-        </div>
+     </div>
 
         {{ Form::open(array('url' => route($data->form_action), 'method' => 'POST','autocomplete' => 'off', 'files' => true)) }}
         {{ Form::hidden('id', $data->id, array('id' => 'user_id')) }}
 
-        <div class="card-body">
-            <div class="form-group row">
-                <div class="col-sm-2 col-form-label">
-                    <strong class="field-title">Nombre</strong>
-                </div>
+    <div class="card-body">
+     <div class="form-group row">
+        div class="col-sm-2 col-form-label">
+        <strong class="field-title">Nombre</strong>
+        </div>
 
-                <div class="col-sm-10 col-content">
-                    {{ Form::text('name', $data->name, array('class' => 'form-control', 'required')) }}
-                    <small class="form-text text-muted">
-                        <i class="fa fa-question-circle" aria-hidden="true"></i> Su Nombre.
-                    </small>
-                </div>
+    <div class="col-sm-10 col-content">
+     {{ Form::text('name', $data->name, array('class' => 'form-control', 'required')) }}
+        <small class="form-text text-muted">
+     <i class="fa fa-question-circle" aria-hidden="true"></i> Escriba su nombre.
+          </small>
+         </div>
+        </div>
+         <div class="card-body">
+        <div class="form-group row">
+        <div class="col-sm-2 col-form-label">
+         <strong class="field-title">N° Control</strong>
+        </div>
+
+         <div class="col-sm-10 col-content">
+             {{ Form::text('name', $data->name, array('class' => 'form-control', 'required')) }}
+            <small class="form-text text-muted">
+                <i class="fa fa-question-circle" aria-hidden="true"></i> Establecer el número de control.
+              </small>
             </div>
-            <div class="card-body">
-            <div class="form-group row">
-                <div class="col-sm-2 col-form-label">
-                    <strong class="field-title">N° Control</strong>
-                </div>
-
-                <div class="col-sm-10 col-content">
-                    {{ Form::text('name', $data->name, array('class' => 'form-control', 'required')) }}
-                    <small class="form-text text-muted">
-                        <i class="fa fa-question-circle" aria-hidden="true"></i> Establecer el número de control.
-                    </small>
-                </div>
             </div>
             <div class="card-body">
             <div class="form-group row">
