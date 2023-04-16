@@ -39,7 +39,7 @@
         </div>
         @endif
 
-        @if(Auth::user()->hasRole('administrator'))
+        @if(Auth::user()->hasRole('administrador'))
         <div class="col-lg-3 col-6">
             <!-- small box -->
             <div class="small-box bg-danger">
@@ -56,7 +56,7 @@
         </div>
         @endif
 
-        @if(Auth::user()->hasRole('administrator'))
+        @if(Auth::user()->hasRole('administrador'))
         <div class="col-lg-3 col-6">
             <!-- small box -->
             <div class="small-box bg-primary">

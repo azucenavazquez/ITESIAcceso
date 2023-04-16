@@ -14,7 +14,7 @@
 
     <div class="card">
         <div class="card-header">
-            <h3 class="card-title">List</h3>
+            <h3 class="card-title">Lista</h3>
         </div>
 
         <div class="card-body">
