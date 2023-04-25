@@ -100,7 +100,7 @@ class ProfileController extends Controller
 
                 // Save log
                 $controller = new SaveActivityLogController();
-                $controller->saveLog($new, "Actualizar perfil");
+                $controller->saveLog($new, "Actualizar perfil php artisan serve");
 
                 // If user update role 2 or 3 means admin or staff will upadate also the history QR
                 if ($currentData->role == 2 || $currentData->role == 3) {
@@ -114,7 +114,7 @@ class ProfileController extends Controller
                     $controller->saveLog($new, "Update history QR");
                 }
 
-                // Update
+                // Actualizar
                 $currentData->update($new);
                 return redirect()->route($this->getRoute().'.details')->with('success', Config::get('const.SUCCESS_UPDATE_MESSAGE'));
             }
