@@ -59,13 +59,7 @@
                         <i class="fa fa-question-circle" aria-hidden="true"></i> Establecer la carrera.
                     </small>
                     
-                    <li><a href="#">Escribir  carreras</a>
-         <ul>
-                <li><a href="#">Industrial</a></li>
-                <li><a href="#">Gestion Empresarial</a></li>
-                <li><a href="#">Sistemas Computacionales</a></li>
-                <li><a href="#">Sistemas Automotriz</a></li>
-          </ul>
+                  
                 </div>
             </div>
             <div class="card-body">
