@@ -21,19 +21,19 @@
         <div class="card-body">
             <div class="form-group row">
                 <div class="col-sm-2 col-form-label">
-                    <strong class="field-title">NOMBRE</strong>
+                    <strong class="field-title">Nombre</strong>
                 </div>
                 <div class="col-sm-10 col-content">
                     {{ Form::text('name', $data->name, array('class' => 'form-control', 'required')) }}
                     <small class="form-text text-muted">
-                        <i class="fa fa-question-circle" aria-hidden="true"></i> User name.
+                        <i class="fa fa-question-circle" aria-hidden="true"></i> Agregar nombre .
                     </small>
                 </div>
             </div>
 
             <div class="form-group row">
                 <div class="col-sm-2 col-form-label">
-                    <strong class="field-title">CORREO</strong>
+                    <strong class="field-title">Correo</strong>
                 </div>
                 <div class="col-sm-10 col-content">
                     {{ Form::email('email',$data->email, array('class' => 'form-control', 'required')) }}
@@ -45,7 +45,7 @@
 
             <div id="form-password" class="form-group row">
                 <div class="col-sm-2 col-form-label">
-                    <strong class="field-title">CONTRASEÑA</strong>
+                    <strong class="field-title">Contraseña</strong>
                 </div>
                 <div class="col-sm-10 col-content">
                     {{ Form::password('password', array('id' => 'password', 'class' => 'form-control', 'autocomplete' => 'new-password')) }}
@@ -55,7 +55,7 @@
                         </small>
                     @else
                         <small class="form-text text-muted">
-                            <i class="fa fa-question-circle" aria-hidden="true"></i> User password, this password for login.
+                            <i class="fa fa-question-circle" aria-hidden="true"></i> Confirmar Contraseña.
                         </small>
                     @endif
                     <label class="reset-field-password" for="show-password"><input id="show-password" type="checkbox" name="show-password" value="1"> Show Password</label>
@@ -65,7 +65,7 @@
             {{--  image  --}}
             <div id="form-image" class="form-group row">
                 <div class="col-sm-2 col-form-label">
-                    <strong class="field-title">IMAGEN</strong>
+                    <strong class="field-title">Imagen</strong>
                 </div>
                 <div class="col-sm-10 col-content">
                     <input class="custom-file-input" name="image" type="file"
