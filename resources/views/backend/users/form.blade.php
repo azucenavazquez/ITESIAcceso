@@ -3,7 +3,7 @@
 @section('title', 'Create and Update Users ' . Config::get('adminlte.title'))
 
 @section('content_header')
-    <h1>Users</h1>
+    <h1>Usuario</h1>
 @stop
 
 @section('content')
@@ -12,7 +12,7 @@
 
     <div class="card">
         <div class="card-header">
-            <h3 class="card-title">Add or Update</h3>
+            <h3 class="card-title">ACTUALIZAR</h3>
         </div>
 
         {{ Form::open(array('url' => route($data->form_action), 'method' => 'POST','autocomplete' => 'off', 'files' => true)) }}
@@ -21,7 +21,7 @@
         <div class="card-body">
             <div class="form-group row">
                 <div class="col-sm-2 col-form-label">
-                    <strong class="field-title">Name</strong>
+                    <strong class="field-title">NOMBRE</strong>
                 </div>
                 <div class="col-sm-10 col-content">
                     {{ Form::text('name', $data->name, array('class' => 'form-control', 'required')) }}
@@ -33,7 +33,7 @@
 
             <div class="form-group row">
                 <div class="col-sm-2 col-form-label">
-                    <strong class="field-title">Email</strong>
+                    <strong class="field-title">CORREO</strong>
                 </div>
                 <div class="col-sm-10 col-content">
                     {{ Form::email('email',$data->email, array('class' => 'form-control', 'required')) }}
@@ -45,7 +45,7 @@
 
             <div id="form-password" class="form-group row">
                 <div class="col-sm-2 col-form-label">
-                    <strong class="field-title">Password</strong>
+                    <strong class="field-title">CONTRASEÑA</strong>
                 </div>
                 <div class="col-sm-10 col-content">
                     {{ Form::password('password', array('id' => 'password', 'class' => 'form-control', 'autocomplete' => 'new-password')) }}
@@ -65,15 +65,15 @@
             {{--  image  --}}
             <div id="form-image" class="form-group row">
                 <div class="col-sm-2 col-form-label">
-                    <strong class="field-title">Image</strong>
+                    <strong class="field-title">IMAGEN</strong>
                 </div>
                 <div class="col-sm-10 col-content">
                     <input class="custom-file-input" name="image" type="file"
                            accept="image/gif, image/jpeg,image/jpg,image/png" data-max-width="800"
                            data-max-height="400">
-                    <label class="custom-file-label" for="customFile">Choose file</label>
+                    <label class="custom-file-label" for="customFile">Elegir Archivo</label>
                     <span
-                        class="image-upload-label"><i class="fa fa-question-circle" aria-hidden="true"></i> Please upload the image (Recommended size: 160px × 160px, max 5MB)</span>
+                        class="image-upload-label"><i class="fa fa-question-circle" aria-hidden="true"></i> Por favor actualizar imagen (Tamaño Recmendado: 160px × 160px, max 5MB)</span>
                     <div class="image-preview-area">
                         <div id="image_preview" class="image-preview">
                             @if ($data->page_type == 'edit')
@@ -95,12 +95,12 @@
 
             <div class="form-group row">
                 <div class="col-sm-2 col-form-label">
-                    <strong class="field-title">Role</strong>
+                    <strong class="field-title">Roles</strong>
                 </div>
                 <div class="col-sm-10 col-content">
                     {{ Form::select('role', $role, $data->role, array('id' => 'role', 'class' => 'form-control', 'required')) }}
                     <small class="form-text text-muted">
-                        <i class="fa fa-question-circle" aria-hidden="true"></i> User role.
+                        <i class="fa fa-question-circle" aria-hidden="true"></i> Rple de usuario.
                     </small>
                     @if($data->page_type == 'add')
                     <small class="form-text text-muted hide text-role">
