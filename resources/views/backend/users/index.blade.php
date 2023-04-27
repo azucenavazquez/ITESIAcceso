@@ -5,7 +5,7 @@
 @section('title', 'Users  | ' . Config::get('adminlte.title'))
 
 @section('content_header')
-    <h1>Users</h1>
+    <h1>Usuario</h1>
 @stop
 
 @section('content')
@@ -14,7 +14,7 @@
 
     <div class="card">
         <div class="card-header">
-            <h3 class="card-title">List</h3>
+            <h3 class="card-title">Lista</h3>
         </div>
 
         <div class="card-body">
