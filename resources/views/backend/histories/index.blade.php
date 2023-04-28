@@ -5,7 +5,7 @@
 @section('title', 'History Qr  | ' . Config::get('adminlte.title'))
 
 @section('content_header')
-    <h1>History Qr</h1>
+    <h1>Historial QR</h1>
 @stop
 
 @section('content')
