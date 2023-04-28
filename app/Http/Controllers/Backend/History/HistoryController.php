@@ -138,7 +138,7 @@ class HistoryController extends Controller
         $data->form_action = $this->getRoute() . '.create';
         // Add page type here to indicate that the form.blade.php is in 'add' mode
         $data->page_type = 'add';
-        $data->button_text = 'Add';
+        $data->button_text = 'Agregar';
 
         return view('backend.histories.form', [
             'data' => $data,
