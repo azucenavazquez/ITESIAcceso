@@ -261,55 +261,55 @@ return [
     'menu' => [
         // Top Nav
         [
-            'text' => 'Dashboard',
+            'text' => 'Panel',
             'url'  => 'home',
             'icon' => 'fa fa-tachometer-alt',
         ],
         [
-            'text' => 'Attendance',
+            'text' => 'Asistencias',
             'url'  => 'attendances',
             'icon' => 'fa fa-database',
             'role' => 'administrator|admin|staff',
         ],
         [
-            'text' => 'History QR',
+            'text' => 'Historial QR',
             'icon' => 'fa fa-qrcode',
             'submenu' => [
                 [
-                    'text' => 'List',
+                    'text' => 'Lista',
                     'url'  => 'histories',
                     'icon' => 'fa fa-list-ul',
                 ],
                 [
-                    'text' => 'Import CSV',
+                    'text' => 'Importar CSV',
                     'url'  => 'histories/import',
                     'icon' => 'fa fa-upload',
                 ],
                 [
-                    'text' => 'Add or Update',
+                    'text' => 'Agregar y Actualizar',
                     'url'  => 'histories/add',
                     'icon' => 'fa fa-edit',
                 ],
             ],
-            'role' => 'administrator|admin',
+            'role' => 'administrador|admin',
         ],
         [
-            'text' => 'Analytic',
+            'text' => 'Analitica',
             'url'  => 'analytic',
             'icon' => 'fa fa-chart-area',
             'role' => 'administrator',
         ],
         [
-            'text' => 'Users',
+            'text' => 'Usuarios',
             'icon' => 'fa fa-user',
             'submenu' => [
                 [
-                    'text' => 'List',
+                    'text' => 'Lista',
                     'url'  => 'users',
                     'icon' => 'fa fa-list-ul',
                 ],
                 [
-                    'text' => 'Add or Update',
+                    'text' => 'Agregar y Actualizar',
                     'url'  => 'users/add',
                     'icon' => 'fa fa-edit',
                 ],
@@ -317,7 +317,7 @@ return [
             'role' => 'administrator',
         ],
         [
-            'text' => 'Settings',
+            'text' => 'Ajustes',
             'url'  => 'settings',
             'icon' => 'fa fa-cogs',
             'role' => 'administrator',
@@ -328,7 +328,7 @@ return [
             'icon' => 'fa fa-id-card',
         ],
         [
-            'text' => 'Logout',
+            'text' => 'Cerrar sesion',
             'url'  => '#',
             'id' => 'logout-menu',
             'icon' => 'fa fa-fw fa-power-off',
