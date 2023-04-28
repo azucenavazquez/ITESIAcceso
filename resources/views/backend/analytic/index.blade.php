@@ -5,7 +5,7 @@
 @section('title', 'Analytic | ' . Config::get('adminlte.title'))
 
 @section('content_header')
-<h1>Analytic</h1>
+<h1>Analitica</h1>
 @stop
 
 @section('content')
@@ -14,7 +14,7 @@
 
 <div class="card">
     <div class="card-header">
-        <h3 class="card-title">Data</h3>
+        <h3 class="card-title">Datos</h3>
     </div>
 
     <div class="card-body">
@@ -55,7 +55,7 @@
 
         <div class="table-responsive datatables-margin-t45">
           <div class="alert alert-info" role="alert">
-              Analytic only displays data for "workers who arrive late", "overtime work", and "early check-out".
+          Analisis  solo muestra datos para "trabajadores que llegan tarde", "horas extras" y "salida temprana".
           </div>
           <hr>
             {!! $html->table(['class' => 'table table-hover']) !!}
