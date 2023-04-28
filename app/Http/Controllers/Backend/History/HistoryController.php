@@ -214,7 +214,7 @@ class HistoryController extends Controller
         $data->form_action = $this->getRoute() . '.update';
         // Add page type here to indicate that the form.blade.php is in 'edit' mode
         $data->page_type = 'edit';
-        $data->button_text = 'Edit';
+        $data->button_text = 'Editar';
 
         return view('backend.histories.form', [
             'data' => $data,
