@@ -29,12 +29,12 @@
                 <div class="inner">
                     <h3>{{ $userCount }}</h3>
 
-                    <p>Total Users</p>
+                    <p>Total Usuarios </p>
                 </div>
                 <div class="icon">
                     <i class="fa fa-user-plus"></i>
                 </div>
-                <a href="{{ route('users') }}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                <a href="{{ route('users') }}" class="small-box-footer">Más información <i class="fas fa-arrow-circle-right"></i></a>
             </div>
         </div>
         @endif
@@ -46,12 +46,12 @@
                 <div class="inner">
                     <h3>{{ $attendanceLateToday }}</h3>
 
-                    <p>Total Come late</p>
+                    <p>Total de Código QR</p>
                 </div>
                 <div class="icon">
                     <i class="fa fa-clock"></i>
                 </div>
-                <a href="{{ route('attendances') }}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                <a href="{{ route('attendances') }}" class="small-box-footer">Más información <i class="fas fa-arrow-circle-right"></i></a>
             </div>
         </div>
         @endif
