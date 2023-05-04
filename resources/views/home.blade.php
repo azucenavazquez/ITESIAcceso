@@ -5,7 +5,7 @@
 @section('title', 'Dashboard  | ' . Config::get('adminlte.title'))
 
 @section('content_header')
-    <h1>Panel principal</h1>
+    <h1>Vista Principal</h1>
 @stop
 
 @section('content')
@@ -63,12 +63,12 @@
                 <div class="inner">
                     <h3>{{ $attendaceToday }}</h3>
 
-                    <p>Total Attendance Today</p>
+                    <p>Total Asistencias </p>
                 </div>
                 <div class="icon">
                     <i class="fa fa-database"></i>
                 </div>
-                <a href="{{ route('attendances') }}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                <a href="{{ route('attendances') }}" class="small-box-footer">Más información <i class="fas fa-arrow-circle-right"></i></a>
             </div>
         </div>
         @endif
