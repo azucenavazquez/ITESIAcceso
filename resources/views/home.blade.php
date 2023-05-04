@@ -5,7 +5,7 @@
 @section('title', 'Dashboard  | ' . Config::get('adminlte.title'))
 
 @section('content_header')
-    <h1>Dashboard</h1>
+    <h1>Panel principal</h1>
 @stop
 
 @section('content')
