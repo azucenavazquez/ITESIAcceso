@@ -145,7 +145,7 @@ class AnalyticController extends Controller
     public function getDataAnalyticDb($param)
     {
         $getDataAnalytics = Attendance::with('history')
-            ->select('attendances.*');
+            ->select('asistencias.*');
 
         if ($param['type'] == 1) {
             $getDataAnalytics = $getDataAnalytics->select(
