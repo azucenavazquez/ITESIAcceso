@@ -3,7 +3,7 @@
 @section('title', 'Settings | ' . Config::get('adminlte.title'))
 
 @section('content_header')
-    <h1>Settings</h1>
+    <h1>Ajustes</h1>
 @stop
 
 @section('content')
@@ -12,7 +12,7 @@
 
     <div class="card">
         <div class="card-header">
-            <h3 class="card-title">Update</h3>
+            <h3 class="card-title">Actualizar</h3>
         </div>
 
         {{ Form::open(array('url' => route($data->form_action), 'method' => 'POST','autocomplete' => 'off', 'files' => true)) }}
@@ -23,7 +23,7 @@
                 <div class="col-md-7">
                     <div class="form-group row">
                         <div class="col-sm-2 col-form-label">
-                            <strong class="field-title">Start Time</strong>
+                            <strong class="field-title">Hora de entrada</strong>
                         </div>
                         <div class="col-sm-10 col-content">
                             {{ Form::text('start_time', $data->start_time, array('class' => 'form-control', 'required', 'id' => 'start_time')) }}
@@ -33,7 +33,7 @@
 
                     <div class="form-group row">
                         <div class="col-sm-2 col-form-label">
-                            <strong class="field-title">Out Time</strong>
+                            <strong class="field-title">Tiempo de salida </strong>
                         </div>
                         <div class="col-sm-10 col-content">
                             {{ Form::text('out_time', $data->out_time, array('class' => 'form-control', 'required', 'id' => 'out_time')) }}
@@ -53,7 +53,7 @@
 
                     <div class="form-group row">
                         <div class="col-sm-2 col-form-label">
-                            <strong class="field-title">Key App</strong>
+                            <strong class="field-title">Clave de App</strong>
                         </div>
                         <div class="col-sm-10 col-content">
                             {{ Form::text('key_app', $data->key_app, array('class' => 'form-control', 'required', 'id' => 'key', 'readonly')) }}
@@ -63,7 +63,7 @@
 
                     <div class="form-group row">
                         <div class="col-sm-2 col-form-label">
-                            <strong class="field-title">Timezone</strong>
+                            <strong class="field-title">Tiempo  de zona</strong>
                         </div>
                         <div class="col-sm-10 col-content">
                             {{ Form::select('timezone', $timezone, $data->timezone, array('id' => 'timezone', 'class' => 'form-control select2')) }}
@@ -74,7 +74,7 @@
                 </div>
                 <div class="col-md-5">
                     <img class="img-responsive img-thumbnail" src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl={{ $data->qr }}&choe=UTF-8" style="margin: 0 auto;display: block;">
-                    <p class="text-center"><b>QR Code</b></p>
+                    <p class="text-center"><b>Código QR</b></p>
                     <p class="text-center form-text text-muted">This QR code is used for the first time opening the App. <br>Scan this QR and this is done only once.</p>
                     <p class="text-center"><a href="https://chart.googleapis.com/chart?chs=400x400&cht=qr&chl={{ $data->qr }}&choe=UTF-8" target="_blank"><button type="button" class="btn btn-success">Download</button></a></p>
                 </div>
@@ -87,7 +87,7 @@
                     <button type="submit" name="submit" id="btn-admin-member-submit"
                             class="btn btn-primary">{{ $data->button_text }}</button>
 
-                    <button type="button" id="generate-key" class="btn btn-primary">Generate New Key</button>
+                    <button type="button" id="generate-key" class="btn btn-primary">Generrar nueva clave</button>
                 </div>
             </div>
         </div>
