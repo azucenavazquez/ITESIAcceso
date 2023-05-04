@@ -298,8 +298,8 @@ class HistoryController extends Controller
         $data = new History();
         $data->form_action = $this->getRoute() . '.importData';
         // Add page type here to indicate that the form.blade.php is in 'add' mode
-        $data->page_type = 'add';
-        $data->button_text = 'Import';
+        $data->page_type = 'Agregar';
+        $data->button_text = 'Importar';
 
         return view('backend.histories.import', [
             'data' => $data,
