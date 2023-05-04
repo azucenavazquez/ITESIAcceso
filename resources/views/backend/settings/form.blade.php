@@ -37,7 +37,7 @@
                         </div>
                         <div class="col-sm-10 col-content">
                             {{ Form::text('out_time', $data->out_time, array('class' => 'form-control', 'required', 'id' => 'out_time')) }}
-                            <p class="form-text text-muted">Llenarse con horas de oficina</p>
+                            <p class="form-text text-muted">Llenarse con horas de acceso al plantel</p>
                         </div>
                     </div>
 
