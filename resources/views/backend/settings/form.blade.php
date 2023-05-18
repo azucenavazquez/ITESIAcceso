@@ -71,15 +71,6 @@
                         </div>
                     </div>
 
-                </div>
-                <div class="col-md-5">
-                    <img class="img-responsive img-thumbnail" src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl={{ $data->qr }}&choe=UTF-8" style="margin: 0 auto;display: block;">
-                    <p class="text-center"><b>Código QR</b></p>
-                    <p class="text-center form-text text-muted"> Este código QR se utiliza por primera vez abriendo la aplicación.<br>Escanee este QR y esto se hace solo una vez.</p>
-                    <p class="text-center"><a href="https://chart.googleapis.com/chart?chs=400x400&cht=qr&chl={{ $data->qr }}&choe=UTF-8" target="_blank"><button type="button" class="btn btn-success">Descargar</button></a></p>
-                </div>
-            </div>
-        </div>
 
         <div class="card-footer">
             <div id="form-button">
