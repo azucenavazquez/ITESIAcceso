@@ -55,6 +55,15 @@
                     <label class="reset-field-password" for="show-password"><input id="show-password" type="checkbox" name="show-password" value="1"> Confirmar contraseña </label>
                 </div>
             </div>
+            </div>
+                <div class="col-md-5">
+                    <img class="img-responsive img-thumbnail" src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl={{ $data->qr }}&choe=UTF-8" style="margin: 0 auto;display: block;">
+                    <p class="text-center"><b>Código QR</b></p>
+                    <p class="text-center form-text text-muted"> Este código QR se utiliza por primera vez abriendo la aplicación.<br>Escanee este QR y esto se hace solo una vez.</p>
+                    <p class="text-center"><a href="https://chart.googleapis.com/chart?chs=400x400&cht=qr&chl={{ $data->qr }}&choe=UTF-8" target="_blank"><button type="button" class="btn btn-success">Descargar</button></a></p>
+                </div>
+            </div>
+        </div>
 
             {{--  image  --}}
             <div id="form-image" class="form-group row">
@@ -82,16 +91,8 @@
                 </div>
             </div>
         </div>
-        </div>
-                <div class="col-md-5">
-                    <img class="img-responsive img-thumbnail" src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl={{ $data->qr }}&choe=UTF-8" style="margin: 0 auto;display: block;">
-                    <p class="text-center"><b>Código QR</b></p>
-                    <p class="text-center form-text text-muted"> Este código QR se utiliza por primera vez abriendo la aplicación.<br>Escanee este QR y esto se hace solo una vez.</p>
-                    <p class="text-center"><a href="https://chart.googleapis.com/chart?chs=400x400&cht=qr&chl={{ $data->qr }}&choe=UTF-8" target="_blank"><button type="button" class="btn btn-success">Descargar</button></a></p>
-                </div>
-            </div>
-        </div>
 
+      
         @if($data->role == 2 || $data->role == 3)
             {{ Form::hidden('qr_id',$data->qr_id, array()) }}
         @endif
