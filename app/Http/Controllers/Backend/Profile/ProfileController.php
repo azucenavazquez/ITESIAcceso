@@ -50,6 +50,7 @@ class ProfileController extends Controller
         $getHistory = History::where('name', $data->name)
             ->first();
         $getHistory ? $data->qr_id = $getHistory->id : 0;
+        
 
         return view('backend.profile.form', [
             'data' => $data
